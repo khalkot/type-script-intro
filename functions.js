@@ -15,3 +15,20 @@ addTwo(5);
 getUpper("Khaled");
 signUpUser("Khaled", 8, true);
 logInUser("Khaled", "alkot");
+/* line 25 would be flagged as an error for missing the value of the 'isRegistered' variable,
+but since it is defaulted to false it will nt resault in an error message.*/
+/* let getVal = (myVal: number):boolean => {
+    if(myVal > 5)
+        return true;
+    else
+        return "200 ok";
+} */
+/* The above function is an example of a function that could have multiple return types,
+ setting the type of the returned value will cause an error in such scenario. */
+var heroes = ["Thor", "Spiderman", "Ironman"];
+heroes.map(function (hero) {
+    return "hero is ".concat(hero);
+});
+function consoleError(errmsg) {
+    console.log(errmsg);
+}
