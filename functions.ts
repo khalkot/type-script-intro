@@ -49,4 +49,8 @@ function consoleError(errmsg: string): void{  // a good practice is to set the r
     console.log(errmsg);
 }
 
+function handleError(errmsg: string): never { // data type "never" causes intentional crash (termination of the program)
+    throw new Error(errmsg)
+}
+
 export{};
